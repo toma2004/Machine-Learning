@@ -1,2 +1,2 @@
 # Machine-Learning
-Practice problems for Machine Learning
+Practice problems Regression

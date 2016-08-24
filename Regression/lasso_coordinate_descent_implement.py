@@ -125,6 +125,10 @@ tolerance = 1.0
 (simple_feature_matrix, output) = get_numpy_data(sales, simple_features, my_output)
 (normalized_simple_feature_matrix, simple_norms) = normalize_features(simple_feature_matrix) # normalize features
 
+print "feature matrix and initial weights"
+print normalized_simple_feature_matrix
+print initial_weights
+
 weights = lasso_cyclical_coordinate_descent(normalized_simple_feature_matrix, output, initial_weights, l1_penalty, tolerance)
 print weights
 
